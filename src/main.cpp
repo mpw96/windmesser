@@ -1,3 +1,10 @@
+// SPDX-License-Identifier: GPL-3.0-only
+
+/*
+ * Windmesser - ESP8266 firmware to measure airspeed.
+ * Copyright (C) 2025 Marc-Philip Werner
+ */
+
 #include <Homie.h>
 
 #define SEND_INTERVAL_MILLIS 10000
