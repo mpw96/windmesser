@@ -11,6 +11,12 @@ Therefore, I need an anemometer from which I can read the windspeed with an ESP8
 
 I use this [anemometer](https://funduinoshop.com/elektronische-module/sensoren/bewegung-distanz/windstaerke-messgeraet-anemometer-fuer-arduino).
 
+And of course a WeMos D1 Mini board.
+
+![front](front.jpeg)
+
+![back](back.jpeg)
+
 # Formula
 
 The ADC on the board understands a voltage between 0 and 1 V.
