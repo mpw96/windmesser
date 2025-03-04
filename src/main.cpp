@@ -12,7 +12,7 @@
 
 // homie firmware
 #define FW_NAME_HOMIE "windmesser"
-#define FW_VERSION_HOMIE "0.0.1"
+#define FW_VERSION_HOMIE "0.0.2"
 
 const uint8_t ANALOG_IN_PIN(A0);
 
@@ -26,17 +26,16 @@ float readADC() {
     int voltage_raw = analogRead(ANALOG_IN_PIN);
     String voltage_bits(voltage_raw, BIN);
     while (voltage_bits.length() < 10) {
-      voltage_bits = "0" + voltage_bits;
+        voltage_bits = "0" + voltage_bits;
     }
 
     Serial << "read " << voltage_raw << " (" << voltage_bits << ") from ADC." << endl;
 
-    float voltage = (float)voltage_raw / 1024.0f * (float) adcCorrection.get() + (float) adcOffset.get(); 
+    float voltage = (float)voltage_raw / 1024.0f * 3.2f * (float) adcCorrection.get() + (float) adcOffset.get();
 
     if (isnan(voltage)) {
-      voltage = 0.0f;
-      Serial << "voltage is not a number, set it to "<< voltage << "." << endl;
-
+        voltage = 0.0f;
+        Serial << "voltage is not a number, set it to "<< voltage << "." << endl;
     }
 
     Serial << "read voltage " << voltage << "V from ADC." << endl;
