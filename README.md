@@ -13,9 +13,9 @@ I use this [anemometer](https://funduinoshop.com/elektronische-module/sensoren/b
 
 And of course a WeMos D1 Mini board.
 
-![front](front.jpeg)
+![front](images/front.jpeg)
 
-![back](back.jpeg)
+![back](images/back.jpeg)
 
 # Formula
 
