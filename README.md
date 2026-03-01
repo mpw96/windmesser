@@ -1,3 +1,7 @@
+# Moved
+
+To [codeberg.org/mpw96/windmesser](https://codeberg.org/mpw96/windmesser).
+
 # Windmesser
 
 I need to retract the awning above our terrasse if the wind is too strong.
